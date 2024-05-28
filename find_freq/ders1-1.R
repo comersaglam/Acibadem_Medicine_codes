@@ -1,0 +1,5 @@
+install.packages("seqinr")
+library("seqinr")
+bacteria_vector= unlist(bacteria, use.names = F)
+bacterium <- paste(bacteria_vector, sep="",collapse = "")
+count(s2c(bacterium),word=2, alphabet= s2c("ACGT"))
